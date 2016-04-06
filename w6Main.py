@@ -24,10 +24,13 @@ def findQYear():
 
 def lab6():
     multiple3and5()
+    
+def lab6_1():
     findQYear()
 
 def main():
     lab6()
+    lab6_1()
 
 if __name__=="__main__":
     main()
