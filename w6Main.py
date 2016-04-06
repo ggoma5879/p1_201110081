@@ -21,6 +21,28 @@ def findQYear():
     else :
         print "No,",qYear,"is not leap year"
 
+def upAndDown():
+    print "High low game, first user enter the hidden number and the guess user turn"
+    nMax=1000
+    i=1
+    obNumber = 0
+    count=0
+    obNumber =int(raw_input("hidden number"))
+    
+
+    while( i!=0):
+        number=int(raw_input("input number"))
+        if number == obNumber:
+            print "CORRECT"
+            break
+        elif number <= obNumber:
+            print "up"
+        elif number >= obNumber :
+            print "down"   
+        else :
+            print "Error, plz enter numbers"
+        count= count + 1
+    print "Correct, you guessed just" ,count+1 
 
 def lab6():
     multiple3and5()
@@ -28,9 +50,13 @@ def lab6():
 def lab6_1():
     findQYear()
 
+def lab6_2():
+    upAndDown()
+
 def main():
     lab6()
     lab6_1()
+    lab6_2()
 
 if __name__=="__main__":
     main()
