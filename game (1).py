@@ -1,4 +1,4 @@
-
+﻿
 # coding: utf-8
 
 # In[1]:
@@ -74,6 +74,7 @@ wn.bgpic("Maze.gif")
 # In[9]:
 
 def MazeGame():
+    print "go to t1 = 200.00,200.00"
     while (1):
         level=raw_input("Choose level : high, mid, low ")
 
@@ -137,6 +138,7 @@ def MazeGame():
                         print("move count +5 ")
                         nMax=nMax+5
             t1.setpos(150,200)
+	    print "go to t1 = -200.00,200.00 we must go to 200,-200"
 
         elif curRegion==(-200.00,200.00):
             print "Let the game begin, if you win, go to other site"
